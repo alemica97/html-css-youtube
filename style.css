@@ -134,7 +134,7 @@ main{
 
 /* Restringimento sidebar tra 1330 e 801px */
 
-@media screen and (max-width:1330px){
+@media screen and (max-width:1330px) and (min-width: 801px){
   .side-bar{
     width: 73px;
     display: flex;
@@ -158,21 +158,24 @@ main{
     font-size: 12px;
   }
 
-  .menu-item .icon{
-    font-size: 28px;
-    margin: 0;
-  }
-
   .menu-item{
     width: 73px;
     height: 73px;
   }
 
-  .side-bar div:nth-child(3){
-    display: none;
+  .menu-item .icon{
+    font-size: 28px;
+    margin: 0;
   }
 
-  .side-bar div:nth-child(2) ul li:nth-child(1n + 2){
+  .side-bar div:nth-child(2) ul li:nth-child(1n + 2), .side-bar div:nth-child(3){
+    display: none;
+  }
+}
+
+/* la sidebar scompare sotto gli 800px di larghezza */
+@media screen and (max-width: 800px){
+  .side-bar{
     display: none;
   }
 }
