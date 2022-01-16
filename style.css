@@ -1,3 +1,7 @@
+html{
+  font-family: 'Open Sans', sans-serif;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -56,7 +60,7 @@ main{
   width: 30px;
   text-align: center;
   margin-right: 10px;
-  font-size: 20px;
+  font-size: 25px;
   vertical-align: middle;
 }
 
@@ -78,7 +82,8 @@ main{
 
 .main-container{
   background-color: #f8f8f8;
-  flex-grow: 1;
+  width: 100%;
+
 }
 
 .categories{
@@ -100,15 +105,21 @@ main{
 
 .play-list-wrapper{
   padding: 20px 30px;
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
 }
 
 .play-list{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .play-list-item{
-  width: 24%;
+  width: 19%;
+  margin-bottom: 15px;
 }
 
 .card-header{
@@ -147,11 +158,11 @@ main{
   }
 
   .menu-item{
-    height: 73px;
     flex-direction: column;
-    row-gap: 3px;
     justify-content: center;
     align-items: center;
+    row-gap: 3px;
+    height: 73px;
   }
 
   .menu-item span{
@@ -164,7 +175,7 @@ main{
   }
 
   .menu-item .icon{
-    font-size: 28px;
+    font-size: 25px;
     margin: 0;
   }
 
@@ -177,5 +188,30 @@ main{
 @media screen and (max-width: 800px){
   .side-bar{
     display: none;
+  }
+}
+
+/* riposizionamento degli elementi della .play-list su tre/due/una colonne/a sotto i 890px */
+@media screen and (max-width:1960px){
+  .play-list-item{
+    width: 24%;
+  }
+}
+
+@media screen and (max-width:1140px){
+  .play-list-item{
+    width: 32%;
+  }
+}
+
+@media screen and (max-width:890px){
+  .play-list-item{
+    width: 49%;
+  }
+}
+
+@media screen and (max-width:510px){
+  .play-list-item{
+    width: 99%;
   }
 }
