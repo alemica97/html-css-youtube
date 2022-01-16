@@ -330,3 +330,46 @@ header{
   font-size: 14px;
   padding-right: 5px;
 }
+
+/* YouTube card  */
+.play-list-item .card-body h3{
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.play-list-item .card-body a{
+  display: block;
+}
+
+.play-list-item .card-body a:hover{
+  color: #313131;
+}
+
+.play-list-item .card-body a, .play-list-item .card-body span{
+  font-size: 14px;
+  font-weight: 500;
+  color: #606060;
+}
+
+.play-list-item .card-header{
+  position: relative;
+}
+
+.play-list-item .videolength{
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 3px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 4px;
+  position: absolute;
+  bottom: 8px;
+  right: 3px;
+}
+
+/* Elemento di divisione  */
+.play-list-wrapper{
+  border-bottom: 2px solid #D3D3D3;
+
+}
