@@ -52,6 +52,7 @@ a{
   padding: 10px 10px 10px 26px;
   display: flex;
   align-items: center;
+  font-size: 14px;
 
 }
 
@@ -72,9 +73,12 @@ a{
 }
 
 .widget__title{
-  padding-left: 13px;
+  padding-left: 26px;
   text-transform: uppercase;
   font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #606060;
 }
 
 .menu-item .profile-image{
@@ -166,15 +170,12 @@ a{
     align-items: center;
     row-gap: 3px;
     height: 73px;
+    width: 73px;
+    padding: 10px;
   }
 
   .menu-item span{
     font-size: 12px;
-  }
-
-  .menu-item{
-    width: 73px;
-    height: 73px;
   }
 
   .menu-item .icon{
@@ -182,7 +183,8 @@ a{
     margin: 0;
   }
 
-  .side-bar div:nth-child(2) ul li:nth-child(1n + 2), .side-bar div:nth-child(3){
+  .side-bar div:nth-child(2) ul li:nth-child(1n + 2), .side-bar div:nth-child(3),
+  .side-bar div:nth-child(4){
     display: none;
   }
 }
@@ -221,6 +223,10 @@ a{
 
 /* fatti i punti richiesti per l'esercizio continuo il codice per terminare il layout */
 
+a{
+  text-decoration: none;
+}
+
 
         /* HEADER  */
 header{
@@ -243,10 +249,10 @@ header{
 .menu-home{
   display: flex;
   align-items: flex-end;
+  width: 172px;
 }
 
 .input .search-bar input{
-  width: 570px;
   height: 40px;
   padding-left: 15px;
   font-size: 16px;
@@ -278,6 +284,8 @@ header{
 .input{
   display: flex;
   align-items: center;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 .actions{
@@ -285,11 +293,12 @@ header{
   align-items: center;
   column-gap: 10px;
   padding-right: 35px;
+  width: 217px;
 }
 
 .actions .act{
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   font-size: 20px;
   text-align: center;
   line-height: 40px;
@@ -309,4 +318,15 @@ header{
   border-right: 0px;
   border-style: solid;
   border-color: #D3D3D3;
+}
+
+.menu-item .point{
+  font-size: 5px;
+  color: #065FD4;
+  padding-left: 25px;
+}
+
+.menu-item .chevron{
+  font-size: 14px;
+  padding-right: 5px;
 }
