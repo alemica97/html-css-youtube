@@ -100,16 +100,6 @@ a{
   padding: 15px 30px;
 }
 
-.categories li{
-  background-color: #f8f8f8;
-  border-radius: 9999px;
-  border:1px solid #e5e5e5;
-  padding: 0 15px;
-  line-height: 30px;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
 .play-list-wrapper{
   padding: 20px 30px;
   display: flex;
@@ -360,6 +350,16 @@ header{
   border-right: 0px;
   border-style: solid;
   border-color: #D3D3D3;
+}
+
+.categories li{
+  background-color: #f8f8f8;
+  border-radius: 9999px;
+  border:1px solid #e5e5e5;
+  padding: 0 15px;
+  line-height: 30px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .menu-item .point{
